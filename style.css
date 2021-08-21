@@ -1,0 +1,411 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS RESET */
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+header {
+  background: url("./images/bg-hero-mobile.svg"), hsl(193, 100%, 96%);
+  padding: 4rem;
+}
+
+nav {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  height: 2rem;
+}
+.btn-secondary {
+  background-color: white;
+  color: hsl(192, 100%, 9%);
+  border-radius: 2rem;
+  padding: 0.75rem 5rem;
+  border: 1px solid white;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 50%);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+article {
+  text-align: center;
+  padding: 0rem;
+  margin-top: 2rem;
+  /* border: 1px solid black; */
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.25rem;
+  /* border: 1px solid black; */
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+}
+
+.intro p {
+  /* border: 1px solid black; */
+  color: hsl(192, 100%, 9%);
+  padding: 3rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.btn-primary {
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  font-weight: 700;
+  padding: 0.75rem 3rem;
+  border-radius: 20px;
+  border: 1px solid hsl(322, 100%, 66%);
+}
+
+article img {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+section {
+  margin: 2rem;
+  /* border: 1px solid black; */
+  box-shadow: 1px 1px 5px 1px rgba(175, 167, 167, 0.2);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+section h2 {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+section p {
+  color: hsl(208, 11%, 55%);
+  padding: 2rem;
+  line-height: 1.4rem;
+}
+
+section img {
+  width: 80%;
+}
+
+.content {
+  padding-bottom: 10rem;
+}
+
+.popup {
+  /* border: 1px solid black; */
+  margin: auto;
+  width: min(90%, 600px);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 1px 1px 5px 1px rgba(175, 167, 167, 0.2);
+  background: white;
+  position: relative;
+  top: -100px;
+}
+
+.popup h2 {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.popup button {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background: var(--Very-Dark-Cyan);
+  color: white;
+  padding: 1rem;
+  /* padding-top: 10rem; */
+}
+
+.info .brand {
+  filter: invert(92%) sepia(99%) saturate(1%) hue-rotate(330deg)
+    brightness(107%) contrast(100%);
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info ul li img {
+  margin-right: 1rem;
+  display: inline-block;
+  /* padding-bottom: 1rem; */
+}
+
+.info ul li span {
+  justify-self: center;
+  width: 50%;
+  font-size: 1rem;
+  /* border: 1px solid white; */
+}
+
+ul li {
+  padding: 0.5rem 0;
+}
+
+.media ul {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.media ul li {
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px;
+  text-align: center;
+}
+.footer p {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 786px) {
+  header {
+    background: url("./images/bg-hero-desktop.svg"), hsl(193, 100%, 96%);
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+
+    padding: 3rem;
+    text-align: left;
+  }
+  article .intro {
+    width: 40%;
+    margin: auto;
+  }
+
+  .intro h1 {
+    padding: 2rem;
+
+    margin-bottom: 0rem;
+  }
+  .intro p {
+    padding: 1.5rem;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+
+  .intro .btn-primary {
+    margin: 1rem;
+  }
+
+  .header-img {
+    width: 60%;
+    text-align: right;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    margin: 7rem;
+  }
+
+  section:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+  section .section-text {
+    text-align: left;
+    padding: 2rem;
+    width: 45%;
+    align-self: right;
+  }
+
+  .section-text h2 {
+    margin-bottom: 1rem;
+  }
+  .section-text p {
+    padding: 0;
+  }
+  .section-text {
+    text-align: left;
+  }
+  section img {
+    width: 40%;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10rem;
+    margin-bottom: 2rem;
+  }
+  .info {
+    width: 30%;
+  }
+  .footer p {
+    text-align: right;
+  }
+}
